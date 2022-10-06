@@ -34,24 +34,24 @@ public class TicTacToe {
             }
 
             if (isPlayer1) {
-                System.out.println("****************************\nit's " + Player1 + "'s turn. (x)");
+                System.out.println("*********************************\nit's " + Player1 + "'s turn. (x)");
             } else {
-                System.out.println("****************************\nIt's " + Player2 + "'s turn. (o)");
+                System.out.println("*********************************\nIt's " + Player2 + "'s turn. (o)");
             }
 
 
             int row = 0;
             int column = 0;
 
-            System.out.println("Enter a row ( 0, 1, 2 ) ");
+            System.out.println("*********************************\nEnter a row ( 0, 1, 2 ) ");
             row = scanner.nextInt();
             System.out.println("Enter a column ( 0, 1, 2 ) ");
             column = scanner.nextInt();
 
             if (row < 0 || column < 0 || row > 3 || column > 3) {
-                System.out.println("That isn't possible!!");
+                System.out.println("*********************************\nThat isn't possible!!\n*********************************");
             } else if (board[row][column] != '-') {
-                System.out.println("!!!This field is already full!!!");
+                System.out.println("*********************************\n!!!This field is already full!!!\n*********************************");
 
             } else {
 
@@ -61,10 +61,10 @@ public class TicTacToe {
             drawBoard(board);
 
             if (hasWon(board) == 'x') {
-                System.out.println(Player1 + " has won!!!");
+                System.out.println("*********************************\n" + Player1 + "won!!!");
                 gameFinished = true;
             } else if (hasWon(board) == 'o') {
-                System.out.println(Player2 + " has won!!!");
+                System.out.println("*********************************\n" + Player2 + " won!!!");
                 gameFinished = true;
             } else {
                 //nobody won
