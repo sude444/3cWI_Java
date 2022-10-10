@@ -13,19 +13,20 @@ public class WorterRaten {
         boolean playing = true;
         boolean wordGuessed = false;
         int tries = 0;
-        int randomNumber = random.nextInt(guesses.length); //random.nextInt(10);
-        char randomWordToGuess[] = guesses[randomNumber].toCharArray(); // java -> j,a,v,a
-        int ammountOfGuesses = randomWordToGuess.length; //total tries to guess a word.
-        char playerGuess[] = new char[ammountOfGuesses]; // "_ _ _ _ _ _ _ _"
+        int randomNumber;
+        char randomWordToGuess;
+        int ammountOfGuesses;
+        char playerGuess;
+
 
 
         while(playing)
         {
             System.out.println("Welcome to Hangman!");
             randomNumber = random.nextInt(guesses.length); //random.nextInt(10);
-            randomWordToGuess = guesses[randomNumber].toCharArray(); // java -> j,a,v,a
+            randomWordToGuess[] = guesses[randomNumber].toCharArray(); // java -> j,a,v,a
             ammountOfGuesses = randomWordToGuess.length; //total tries to guess a word.
-            playerGuess = new char[ammountOfGuesses]; // "_ _ _ _ _ _ _ _"
+            playerGuess[] = new char[ammountOfGuesses]; // "_ _ _ _ _ _ _ _"
 
             for(int i = 0; i < randomWordToGuess.length; i++)
             {
@@ -37,6 +38,9 @@ public class WorterRaten {
                 System.out.println("Current guesses: " + playerGuess);
 
                 System.out.println("You have " + ammountOfGuesses +" ammount of guesses left. \n");
+                System.out.println("Enter a single character: ");
+                char input = scanner.nextLine().charAt(0);
+                tries++;
             }
 
 
