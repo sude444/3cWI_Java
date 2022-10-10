@@ -25,8 +25,10 @@ public class TicTacToe {
         char symbol = ' ';
         int count = 0;
         boolean gameFinished = false;
+        boolean playerSwitch = false;
 
         while (gameFinished == false) {
+
             if (isPlayer1) {
                 symbol = 'x';
             } else {
@@ -39,7 +41,6 @@ public class TicTacToe {
                 System.out.println("*********************************\nIt's " + Player2 + "'s turn. (o)");
             }
 
-
             int row = 0;
             int column = 0;
 
@@ -50,30 +51,31 @@ public class TicTacToe {
 
             if (row < 0 || column < 0 || row > 3 || column > 3) {
                 System.out.println("*********************************\nThat isn't possible!!\n*********************************");
+                playerSwitch = true;
             } else if (board[row][column] != '-') {
-                System.out.println("*********************************\n!!!This field is already full!!!\n*********************************");
-
+                System.out.println("*********************************\n!!! This field is already full !!!");
+                playerSwitch = true;
             } else {
-
+                playerSwitch = false;
+                board[row][column] = symbol;
+                drawBoard(board);
+                if (isPlayer1) {
+                    isPlayer1 = false;
+                } else {
+                    isPlayer1 = true;
+                }
             }
 
-            board[row][column] = symbol;
-            drawBoard(board);
+
 
             if (hasWon(board) == 'x') {
-                System.out.println("*********************************\n" + Player1 + "won!!!");
+                System.out.println("*********************************\n" + Player1 + " won!!!");
                 gameFinished = true;
             } else if (hasWon(board) == 'o') {
                 System.out.println("*********************************\n" + Player2 + " won!!!");
                 gameFinished = true;
             } else {
                 //nobody won
-            }
-
-            if (isPlayer1) {
-                isPlayer1 = false;
-            } else {
-                isPlayer1 = true;
             }
 
         }
