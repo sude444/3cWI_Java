@@ -1,53 +1,48 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class WorterRaten {
+public class WorterRaten
+{
 
     public static void main(String[] args)
     {
-        String guesses[] = {
-                "katze", "java", "hangman", "fortnite" };
-
-        Scanner scanner = new Scanner(System.in);
+        String guesses = random.nextLine();
+        int attempts = 10;
+        int wordLength;
+        boolean solved;
+        Scanner userInput = new Scanner(System.in);
         Random random = new Random();
-        boolean playing = true;
-        boolean wordGuessed = false;
-        int tries = 0;
-        int randomNumber;
-        char randomWordToGuess;
-        int ammountOfGuesses;
-        char playerGuess;
 
 
 
-        while(playing)
+
+        for(int i = 1; i <= 20; i++)
+            System.out.print("\n");
+
+
+        Scanner userLetter = new Scanner(System.in);
+        String letter;
+
+        System.out.print("Word to guess: ");
+        for (int i = 0; i < guesses.length(); i++)
         {
-            System.out.println("Welcome to Hangman!");
-            randomNumber = random.nextInt(guesses.length); //random.nextInt(10);
-            randomWordToGuess[] = guesses[randomNumber].toCharArray(); // java -> j,a,v,a
-            ammountOfGuesses = randomWordToGuess.length; //total tries to guess a word.
-            playerGuess[] = new char[ammountOfGuesses]; // "_ _ _ _ _ _ _ _"
-
-            for(int i = 0; i < randomWordToGuess.length; i++)
-            {
-                playerGuess[i] = '_';
-            }
-
-            while(!wordGuessed && tries != ammountOfGuesses)
-            {
-                System.out.println("Current guesses: " + playerGuess);
-
-                System.out.println("You have " + ammountOfGuesses +" ammount of guesses left. \n");
-                System.out.println("Enter a single character: ");
-                char input = scanner.nextLine().charAt(0);
-                tries++;
-            }
-
-
+            System.out.print("_");
         }
 
+        while (attempts <= 10 && attempts > 0)
+        {
+            System.out.println("\nAttempts left: " + attempts);
+            System.out.print("Enter letter: ");
 
+            attempts--;
+        }
+
+        System.out.println("\n---------------------------");
+        System.out.println("Sorry you didn't find the mystery word!");
+        System.out.println("It was \"" + guesses + "\"");
 
     }
 
 }
+
+
