@@ -1,59 +1,57 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class WorterRaten
-{
+public class WorterRaten {
 
-    public static void main(String[] args)
-    {
-        String[] word = { "katze", "java", "programmieren" };
-        int attempts = 10;
-        String letter;
+    public static void main(String[] args) {
+        String[] word = {"katze", "java", "programmieren"};
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
+        boolean playing = true;
+        while (playing) {
+            System.out.println("Lets Start Playing Hangman ver 0.1");
+            int randomNumber = random.nextInt(word.length);
+            char WordToGuess[] = word[randomNumber].toCharArray();
+            int ammountOfGuesses = WordToGuess.length;
+            char playerGuess[] = new char[ammountOfGuesses];
 
-        System.out.print("Word to guess: ");
-        for (char i = 0; i < word.length; i++)
-        {
-            if ( )
-            {
+            for (int i = 0; i < playerGuess.length; i++) {
+                playerGuess[i] = '_';
+            }
 
+            boolean wordIsGuessed = false;
+            int tries = 0;
+
+            while (!wordIsGuessed && tries != ammountOfGuesses) {
+                System.out.println("Current Guesses: ");
+                System.out.println(playerGuess);
+                System.out.printf("You have %d ammount of tries left.\n", ammountOfGuesses - tries);
+                System.out.println("Enter a single character: ");
+                char input = scanner.nextLine().charAt(0);
+                tries++;
+
+                if (input == '-') {
+                    wordIsGuessed = true;
+                    playing = false;
+                } else {
+                    for (int i = 0; i < WordToGuess.length; i++) {
+                        if (WordToGuess[i] == input) {
+                            playerGuess[i] = input;
+                        }
+                    }
+                    if(wordIsGuessed){
+                        wordIsGuessed = true;
+                        System.out.println("Congratulations");
+                    }
+                }
             }
         }
-
-        while (attempts <= 10 && attempts > 0)
-        {
-            System.out.println("\nAttempts left: " + attempts);
-            System.out.print("Enter letter: ");
-            letter = scanner.nextLine();
-
-            attempts--;
-        }
-
-        System.out.println("\n---------------------------");
-        System.out.println("Sorry you didn't find the word!");
-        System.out.println("It was \"" + word + "\"");
     }
-
-    public static String longestString(String[] str)
-    {
-        String longest = "";
-        System.out.print("Word to guess: ");
-        for (int i = 0; i < str.length; i++)
-        {
-            System.out.print("_");
-            if (str[i].length() > longest.length())
-            {
-                longest = str[i];
-
-            }
-        }
-        return longest;
-    }
-
-
 }
+
+
+
 
 
 
