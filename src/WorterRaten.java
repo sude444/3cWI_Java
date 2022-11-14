@@ -26,7 +26,7 @@ public class WorterRaten {
             while (!wordIsGuessed && tries != ammountOfGuesses) {
                 System.out.println("Current Guesses: ");
                 System.out.println(playerGuess);
-                System.out.printf("You have %d ammount of tries left.\n", ammountOfGuesses - tries);
+                System.out.printf("You have %d tries left.\n", ammountOfGuesses - tries);
                 System.out.println("Enter a single character: ");
                 char input = scanner.nextLine().charAt(0);
                 tries++;
@@ -45,6 +45,15 @@ public class WorterRaten {
                         System.out.println("Congratulations");
                     }
                 }
+            }
+            if(!wordIsGuessed){
+                System.out.println("You ran out of guesses.");
+            }
+
+            System.out.println("Would you like to play again? (yes/no) ");
+            String choice = scanner.nextLine();
+            if(choice.equals("no")){
+                playing = false;
             }
         }
     }
