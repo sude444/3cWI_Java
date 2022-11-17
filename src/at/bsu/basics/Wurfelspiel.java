@@ -1,3 +1,5 @@
+package at.bsu.basics;
+
 import java.util.Random;
 import java.util.Scanner;
 
