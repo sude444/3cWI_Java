@@ -13,7 +13,6 @@ public class Car {
     {
         System.out.println("Ich Bremse");
     }
-
     public void turboBoost()
     {
         if(tank >= fuelVolume/10)
@@ -24,15 +23,13 @@ public class Car {
             System.out.println("Not enough fuel to go to Superboost");
         }
     }
-
-    public void honk(int ammountOfRepetitions)
+    public void honk(int amountOfRepetitions)
     {
-        for(int i = 0; i < ammountOfRepetitions; i++)
+        for(int i = 0; i < amountOfRepetitions; i++)
         {
             System.out.println("Tuut ");
         }
     }
-
     public void getRemainingRange()
     {
         System.out.println(tank / fuelConsumption);
