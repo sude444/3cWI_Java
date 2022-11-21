@@ -1,11 +1,13 @@
 package at.bsu.car;
 
 public class Car {
-    int fuelConsumption;
+    float fuelConsumption;
     public String Brand;
     public String serialNumber;
     private String color;
     int fuelVolume;
+    float tank;
+
 
     public void Break()
     {
@@ -14,8 +16,25 @@ public class Car {
 
     public void turboBoost()
     {
-        if(c1.)
+        if(tank >= fuelVolume/10)
+        {
+            System.out.println("SuperBoostMode");
+        }
+        else {
+            System.out.println("Not enough fuel to go to Superboost");
+        }
     }
 
+    public void honk(int ammountOfRepetitions)
+    {
+        for(int i = 0; i < ammountOfRepetitions; i++)
+        {
+            System.out.println("Tuut ");
+        }
+    }
 
+    public void getRemainingRange()
+    {
+        System.out.println(tank / fuelConsumption);
+    }
 }
