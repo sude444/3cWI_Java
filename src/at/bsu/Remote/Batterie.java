@@ -1,4 +1,4 @@
-package Remote;
+package at.bsu.Remote;
 
 public class Batterie {
 
