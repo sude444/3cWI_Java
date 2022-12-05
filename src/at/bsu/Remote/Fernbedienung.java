@@ -26,7 +26,7 @@ public class Fernbedienung {
     }
 
     public void turnOn() {
-       ;
+        ;
     }
 
     public void turnOff(){
