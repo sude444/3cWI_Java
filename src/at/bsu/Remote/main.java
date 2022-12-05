@@ -8,6 +8,13 @@ public class main {
         Batterie b1 = new Batterie(100);
         Batterie b2 = new Batterie(50);
 
+        f1.addBatterie(b1);
+        f1.addBatterie(b2);
+
+        f1.getStatus();
+        f1.turnOn();
+        f1.getStatus();
+        f1.turnOff();
 
     }
 }

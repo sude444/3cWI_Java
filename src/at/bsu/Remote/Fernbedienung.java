@@ -8,34 +8,30 @@ public class Fernbedienung {
     private int batteryAmount;
     private List<Batterie> batteries;
 
-    public Fernbedienung(int batteryAmount)
-    {
+    public Fernbedienung(int batteryAmount) {
         this.batteryAmount = batteryAmount;
         this.batteries = new ArrayList<>();
     }
 
-    public void addBatterie(Batterie batterie)
-    {
+    public void addBatterie(Batterie batterie) {
         this.batteries.add(batterie);
     }
 
-    public List<Batterie> getBatteries()
-    {
+    public List<Batterie> getBatteries() {
         return batteries;
     }
 
-    public void getStatus()
-    {
+    public void getStatus() {
         System.out.println((this.batteries.get(0).getChargingStatus() + this.batteries.get(1).getChargingStatus())/2);
     }
 
-    public void turnOn()
-    {
-        this.batteries.get(0).setChargingStatus(this.batteries.get(0).getChargingStatus() - 5);
-        this.batteries.get(1).setChargingStatus(this.batteries.get(1).getChargingStatus() - 5);
-        System.out.println("Verbraucher angeschlossen");
+    public void turnOn() {
+       ;
     }
 
+    public void turnOff(){
+        System.out.println("Kein Verbraucher angeschlossen");
+    }
 
 
 

@@ -17,7 +17,7 @@ public class Main
         Tire ti2 = new Tire(40, "pink");
         Tire ti3 = new Tire(40, "black");
         Tire ti4 = new Tire(40, "black");
-        c1.addTire(ti1);
+
 
 
 
