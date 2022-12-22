@@ -26,11 +26,13 @@ public class Fernbedienung {
     }
 
     public void turnOn() {
-        ;
+        this.batteries.get(0).setChargingStatus(this.batteries.get(0).getChargingStatus() - 5);
+        this.batteries.get(1).setChargingStatus(this.batteries.get(1).getChargingStatus() - 5);
+        System.out.println("Verbraucher angeschlossen");
     }
 
     public void turnOff(){
-        System.out.println("Kein Verbraucher angeschlossen");
+        System.out.println("Kein Verbraucher angeschlossenn");
     }
 
 
