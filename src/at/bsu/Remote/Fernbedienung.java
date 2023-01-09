@@ -32,7 +32,7 @@ public class Fernbedienung {
     }
 
     public void turnOff(){
-        System.out.println("Kein Verbraucher angeschlossenn");
+        System.out.println("Kein Verbraucher angeschlossen");
     }
 
 
