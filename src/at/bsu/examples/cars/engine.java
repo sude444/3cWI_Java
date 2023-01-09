@@ -39,11 +39,19 @@ public class engine {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public int getdrivenKm() {
+    public TYPE getFuelType() {
+        return fuelType;
+    }
+
+    public void setFuelType(TYPE fuelType) {
+        this.fuelType = fuelType;
+    }
+
+    public int getDrivenKm() {
         return drivenKm;
     }
 
-    public void setdrivenKm(int drivenKm) {
-        drivenKm = drivenKm;
+    public void setDrivenKm(int drivenKm) {
+        this.drivenKm = drivenKm;
     }
 }

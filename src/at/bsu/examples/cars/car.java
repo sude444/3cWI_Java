@@ -11,14 +11,13 @@ public class car {
 
 
     //Constructor
-    public car(String color, int maxSpeed, int basePrice,
-               Manufacturer manufacturer, Engine engine)
+    public car(String color, int maxSpeed, int basePrice, Manufacturer manufacturer, Engine engine)
     {
         this.color = color;
-        MaxSpeed = maxSpeed;
-        BasePrice = basePrice;
-        this.Manufacturer = manufacturer;
-        this.Engine = engine;
+        this.maxSpeed = maxSpeed;
+        this.basePrice = basePrice;
+        this.manufacturer = manufacturer;
+        this.engine = engine;
 
     }
 
@@ -31,6 +30,7 @@ public class car {
         }
         else{
             this.engine.setdrivenKm(this.engine.getdrivenKm() + this.engine.getdrivenKm()*9.8);
+            System.out.println("Der Benzinverbrauch entspricht dem Basisverbrauch nicht!");
         }
     }
 
