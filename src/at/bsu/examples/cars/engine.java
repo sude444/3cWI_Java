@@ -39,11 +39,11 @@ public class engine {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public int getDrivenKm() {
-        return DrivenKm;
+    public int getdrivenKm() {
+        return drivenKm;
     }
 
-    public void setDrivenKm(int drivenKm) {
-        DrivenKm = drivenKm;
+    public void setdrivenKm(int drivenKm) {
+        drivenKm = drivenKm;
     }
 }

@@ -9,6 +9,8 @@ public class car {
     private Manufacturer manufacturer;
     private Engine engine;
 
+
+    //Constructor
     public car(String color, int maxSpeed, int basePrice,
                Manufacturer manufacturer, Engine engine)
     {
@@ -21,9 +23,16 @@ public class car {
     }
 
 
-
-
-
+    public void driveCar(int km)
+    {
+        this.engine.setdrivenKm(this.engine.getdrivenKm()+km);
+        if(this.engine.drivenKm() >= 50000) {
+            System.out.println("Der Benzinverbrauch entspricht dem Basisverbrauch.");
+        }
+        else{
+            this.engine.setdrivenKm(this.engine.getdrivenKm() + this.engine.getdrivenKm()*9.8);
+        }
+    }
 
 
 
