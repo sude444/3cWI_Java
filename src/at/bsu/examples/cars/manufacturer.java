@@ -5,13 +5,17 @@ public class manufacturer {
     private String countryOfOrigin;
     private int discount;
 
+
+
+    //Constructor
+
     public manufacturer(String name, String countryOfOrigin, int discount) {
         this.name = name;
         this.countryOfOrigin = countryOfOrigin;
         this.discount = discount;
 
     }
-    
+
 
     //Getter and Setter
 
