@@ -1,19 +1,19 @@
 package at.bsu.examples.cars;
 
-public class engine {
+public class Engine {
 
-    public enum TYPE{
+    public enum FUELTYPE{
         DIESEL,
         PETROL
     }
-    private TYPE fuelType;
+    private FUELTYPE fuelType;
     private int performance;
     private double fuelConsumption;
     private int drivenKm;
 
 
     //Constructor
-    public engine(TYPE fuelType, int performance, double fuelConsumption, int drivenKm){
+    public Engine(FUELTYPE fuelType, int performance, double fuelConsumption, int drivenKm){
         this.fuelType = fuelType;
         this.performance = performance;
         this.fuelConsumption = fuelConsumption;
@@ -39,11 +39,11 @@ public class engine {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public TYPE getFuelType() {
+    public FUELTYPE getFuelType() {
         return fuelType;
     }
 
-    public void setFuelType(TYPE fuelType) {
+    public void setFuelType(FUELTYPE fuelType) {
         this.fuelType = fuelType;
     }
 

@@ -20,12 +20,13 @@ public class Main
 
 
 
-
-
-
-
-
         System.out.println(c1.getMirrors().get(0).getPosition());
+
+
+
+
+
+
 
 
         /*

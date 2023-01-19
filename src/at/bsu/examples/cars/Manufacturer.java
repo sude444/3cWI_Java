@@ -1,6 +1,6 @@
 package at.bsu.examples.cars;
 
-public class manufacturer {
+public class Manufacturer {
     private String name;
     private String countryOfOrigin;
     private int discount;
@@ -9,7 +9,7 @@ public class manufacturer {
 
     //Constructor
 
-    public manufacturer(String name, String countryOfOrigin, int discount) {
+    public Manufacturer(String name, String countryOfOrigin, int discount) {
         this.name = name;
         this.countryOfOrigin = countryOfOrigin;
         this.discount = discount;

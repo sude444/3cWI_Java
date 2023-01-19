@@ -1,8 +1,6 @@
 package at.bsu.examples.cars;
 
-import at.bsu.car.Engine;
-
-public class car {
+public class Car {
     private String color;
     private int maxSpeed;
     private int basePrice;
@@ -11,7 +9,7 @@ public class car {
 
 
     //Constructor
-    public car(String color, int maxSpeed, int basePrice, Manufacturer manufacturer, Engine engine)
+    public Car(String color, int maxSpeed, int basePrice, Manufacturer manufacturer, Engine engine)
     {
         this.color = color;
         this.maxSpeed = maxSpeed;
@@ -24,13 +22,10 @@ public class car {
 
     public void driveCar(int km)
     {
-        this.engine.setdrivenKm(this.engine.getdrivenKm()+km);
-        if(this.engine.drivenKm() >= 50000) {
+        this.engine.setDrivenKm(this.engine.getDrivenKm()+km);
+        if(this.engine.getDrivenKm() >= 50000) {
             System.out.println("Der Benzinverbrauch entspricht dem Basisverbrauch.");
-        }
-        else{
-            this.engine.setdrivenKm(this.engine.getdrivenKm() + this.engine.getdrivenKm()*9.8);
-            System.out.println("Der Benzinverbrauch entspricht dem Basisverbrauch nicht!");
+            this.engine.setFuelConsumption(this.engine.getFuelConsumption() + this.engine.getFuelConsumption() * 0.098);
         }
     }
 
