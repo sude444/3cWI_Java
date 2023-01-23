@@ -11,16 +11,22 @@ public class Lamp {
     }
 
     public void addLight(Light light) {
+
         this.lights.add(light);
     }
 
-    public void turnOn(){
+    public void turnOn(Light light){
         if(light.isTurnedOn() == true){
             System.out.println("Mein Name ist " + light.getName() +". Ich bin bereits eingeschaltet.");
         }
+        else
+        {
+            light.setTurnedOn(true);
+            powerUsed += light.getPowerConsumption();
+            System.out.println(light.getName() + " eingeschaltet");
+        }
 
     }
-
 
 
     //Getter und Setter
