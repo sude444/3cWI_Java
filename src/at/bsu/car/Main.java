@@ -18,15 +18,11 @@ public class Main
         Tire ti3 = new Tire(40, "black");
         Tire ti4 = new Tire(40, "black");
 
-
-
         System.out.println(c1.getMirrors().get(0).getPosition());
 
 
-
-
-
-
+        Truck tr1 = new Truck(e1, "Mercedes", "white", "Trailer1");
+        System.out.println(tr1.getColor() + tr1.getTrailer());
 
 
         /*
