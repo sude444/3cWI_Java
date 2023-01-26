@@ -31,6 +31,10 @@ public class Car {
        this.mirrors.add(rearMirror);
     }
 
+    public void stop(){
+        System.out.println("I am stopping!");
+    }
+
     public void addTires(Tire tires) {
         this.tires.add(tires);
     }
