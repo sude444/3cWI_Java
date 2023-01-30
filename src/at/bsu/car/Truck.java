@@ -8,8 +8,9 @@ public class Truck extends Car{
         this.trailer = trailer;
     }
 
+
     public void drive(){
-        System.out.println("I am driving!");
+        System.out.println("I am driving fast!");
     }
 
 
