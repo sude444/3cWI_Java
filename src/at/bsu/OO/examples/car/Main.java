@@ -1,4 +1,4 @@
-package at.bsu.car;
+package at.bsu.OO.examples.car;
 
 public class Main
 {

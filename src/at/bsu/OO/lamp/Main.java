@@ -1,4 +1,4 @@
-package at.bsu.lamp;
+package at.bsu.OO.lamp;
 
 public class Main {
     public static void main(String[] args){

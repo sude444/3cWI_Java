@@ -1,4 +1,4 @@
-package at.bsu.lamp;
+package at.bsu.OO.lamp;
 import java.util.ArrayList;
 import java.util.List;
 

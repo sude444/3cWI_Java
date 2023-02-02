@@ -1,4 +1,4 @@
-package at.bsu.Remote;
+package at.bsu.OO.Remote;
 
 public class main {
 
