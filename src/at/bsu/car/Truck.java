@@ -17,7 +17,6 @@ public class Truck extends Car{
 
     //getter setter
 
-
     public String getTrailer() {
         return trailer;
     }
