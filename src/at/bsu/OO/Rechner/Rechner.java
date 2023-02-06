@@ -14,7 +14,7 @@ public class Rechner{
         boolean stop = false;
 
         do{
-            System.out.println("Was möchten sie tun? \n--------------------\n1: Addieren\n2: subtrahieren\n3: Dividieren\n4: Multiplizieren\ns: stoppen");
+            System.out.println("Was möchten sie tun? \n--------------------\n1: Addieren\n2: subtrahieren\n3: Dividieren\n4: Multiplizieren\n5: stoppen");
             selection = scanner.nextInt();
 
             switch (selection){
