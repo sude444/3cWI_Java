@@ -10,7 +10,7 @@ public class WissenschaftlicherRechner extends Rechner{
         double sinValue = Math.sin(radians);
 
         // prints the sine value
-        System.out.println("sin(" + degrees + ") = " + sinValue);
+        System.out.println("Der Sinus Ihrer Zahl beträgt: sin(" + degrees + ") = " + sinValue+"\n--------------------");
     }
     public void cosinus(double degrees)
     {
@@ -21,6 +21,6 @@ public class WissenschaftlicherRechner extends Rechner{
         double cosValue = Math.cos(radians);
 
         // prints the sine value
-        System.out.println("cos(" + degrees + ") = " + cosValue);
+        System.out.println("Der Cosinus Ihrer Zahl beträgt: cos(" + degrees + ") = " + cosValue+"\n--------------------");
     }
 }
