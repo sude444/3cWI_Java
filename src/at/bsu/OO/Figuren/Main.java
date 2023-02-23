@@ -19,6 +19,7 @@ public class Main {
 
             switch (selection){
                 case 1: //Kreis
+                    System.out.println("Sie haben den Kreis ausgewählt");
                     break;
 
                 case 2: //Viereck
