@@ -25,16 +25,19 @@ public class Main {
                 case 2: //Viereck
                     System.out.println(viereck.getName());
                     System.out.println(viereck.getSiteA());
+                    System.out.println("\n------------------------------------");
                     break;
 
                 case 3: //Quadrat
                     System.out.println(quadrat.getName());
                     System.out.println(quadrat.getSiteA());
+                    System.out.println("\n------------------------------------");
                     break;
 
                 case 4: //Würfel
                     System.out.println(würfel.getName());
                     System.out.println(würfel.getSiteA());
+                    System.out.println("\n------------------------------------");
                     break;
 
                 case 5: //Beenden
@@ -42,7 +45,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Sie muessen eine Zahl von 1 bis 5 eingeben!!!");
+                    System.out.println("Sie muessen eine Zahl von 1 bis 5 eingeben!!!\n------------------------------------");
 
             }
 
