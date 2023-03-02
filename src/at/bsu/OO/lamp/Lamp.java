@@ -43,7 +43,7 @@ public class Lamp {
         }
     }
 
-    //Getter und Setter
+    //Getter and Setter
     public List<Light> getLights() {
         return lights;
     }
