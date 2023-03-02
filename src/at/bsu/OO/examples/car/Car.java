@@ -121,7 +121,7 @@ public class Car {
         return fuelConsumption;
     }
     /*
-    ignorieren 
+    ignorieren
     public float getTank() {
         return tank;
     }

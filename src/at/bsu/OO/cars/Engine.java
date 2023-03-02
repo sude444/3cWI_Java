@@ -22,7 +22,7 @@ public class Engine {
 
 
 
-    //Getter and Setter
+    //Getter und Setter
     public int getPerformance() {
         return performance;
     }
