@@ -1,7 +1,6 @@
-package at.bsu.OO.Handy;
+package at.bsu.OO.handy;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MemoryCard {
     private int capacity;

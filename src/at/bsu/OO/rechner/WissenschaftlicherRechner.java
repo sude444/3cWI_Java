@@ -1,4 +1,4 @@
-package at.bsu.OO.Rechner;
+package at.bsu.OO.rechner;
 
 public class WissenschaftlicherRechner extends Rechner{
     public void sinus(double degrees)

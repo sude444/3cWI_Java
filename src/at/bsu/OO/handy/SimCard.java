@@ -1,4 +1,4 @@
-package at.bsu.OO.Handy;
+package at.bsu.OO.handy;
 
 public class SimCard {
     private int id;

@@ -1,4 +1,4 @@
-package at.bsu.OO.Remote;
+package at.bsu.OO.remote;
 
 import java.util.List;
 import java.util.ArrayList;

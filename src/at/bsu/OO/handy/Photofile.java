@@ -1,4 +1,4 @@
-package at.bsu.OO.Handy;
+package at.bsu.OO.handy;
 
 public class Photofile {
     public enum TYPE{jpg,png, mp4}

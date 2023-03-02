@@ -1,6 +1,4 @@
-package at.bsu.OO.Figuren;
-
-import java.util.Scanner;
+package at.bsu.OO.figuren;
 
 public class Kreis
 {

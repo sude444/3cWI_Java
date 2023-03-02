@@ -1,4 +1,4 @@
-package at.bsu.OO.Rechner;
+package at.bsu.OO.rechner;
 
 import java.util.Scanner;
 

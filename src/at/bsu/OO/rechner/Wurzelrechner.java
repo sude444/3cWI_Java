@@ -1,4 +1,4 @@
-package at.bsu.OO.Rechner;
+package at.bsu.OO.rechner;
 
 public class Wurzelrechner extends Rechner {
     public void Wurzelziehen(double number,double wurzel)

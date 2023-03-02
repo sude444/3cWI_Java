@@ -1,4 +1,4 @@
-package at.bsu.OO.Figuren;
+package at.bsu.OO.figuren;
 
 import java.util.Scanner;
 
