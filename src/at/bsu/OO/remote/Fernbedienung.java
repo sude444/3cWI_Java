@@ -36,7 +36,7 @@ public class Fernbedienung {
     }
 
 
-
+    //
 
     public int getBatteryAmount() {
         return batteryAmount;
