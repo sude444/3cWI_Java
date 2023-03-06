@@ -12,7 +12,7 @@ public class Photofile {
     }
 
     public void getInfo(){
-        System.out.println("File name: "+ this.name +"File size: "+ this.filesize +"File Type: "+ this.filesize);
+        System.out.println("File name: "+ this.name +" File size: "+ this.filesize +" File Type: "+ this.filesize);
     }
 
 
