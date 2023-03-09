@@ -18,9 +18,7 @@ public class Camera {
     }
 
 
-
-
-    //Setter und Getter
+    //Setter and Getter
     public RESOLUTION getResolution() {
         return resolution;
     }
