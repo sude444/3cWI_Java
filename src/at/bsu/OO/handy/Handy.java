@@ -17,21 +17,28 @@ public class Handy {
     //Funktionen
 
     public void takePicture(){
-
+        if(MemoryCard.getFreeSpace() > 0)
+        {
+            MemoryCard.saveFile(camera.makePic());
+            System.out.println("Cheese!");
+        }
+        else
+        {
+            System.out.println("Kein Speicherplatz mehr!");
+        }
     }
 
     public void makeCall(String number){
-
+        simCard.whatNumber(number);
     }
 
     public void getFreeSpace(){
-
+        MemoryCard.getFreeSpace();
     }
 
     public void ptintAllFiles(){
-
+        MemoryCard.getAllFiles();
     }
-
 
 
     //Getter and Setter
