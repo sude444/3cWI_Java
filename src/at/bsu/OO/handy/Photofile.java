@@ -1,6 +1,8 @@
 package at.bsu.OO.handy;
 
 public class Photofile {
+
+
     public enum TYPE{jpg,png, mp4}
     private int filesize;
     public String name;
@@ -13,6 +15,10 @@ public class Photofile {
 
     public void getInfo(){
         System.out.println("File name: "+ this.name +" File size: "+ this.filesize +" File Type: "+ this.filesize);
+    }
+
+    public int getSize() {
+        return filesize;
     }
 
 

@@ -13,10 +13,24 @@ public class MemoryCard {
         this.files = new ArrayList<Photofile>();
     }
 
+    
+    public void saveFile(Photofile file){
+        files.add(file);
+        capacity -= file.getSize();
+    }
 
+    public void getAllFiles()
+    {
+        for(int i = 0; i < files.size(); i++)
+        {
+            this.files.get(i).getInfo();
+        }
+    }
 
-
-
+    public int getFreeSpace()
+    {
+        return capacity;
+    }
 
 
     //Getter and Setter
