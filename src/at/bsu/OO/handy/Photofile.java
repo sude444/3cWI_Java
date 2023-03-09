@@ -22,7 +22,7 @@ public class Photofile {
     }
 
 
-    //Getter and Setter
+    //Getter und Setter
     public int getFilesize() {
         return filesize;
     }
