@@ -12,7 +12,7 @@ public class Camera {
 
 
     //Funktion
-    public Photofile takePicture(){
+    public Photofile makePic(){
         Photofile pic = new Photofile(Photofile.TYPE.jpg, "pictutre", 2);
         return pic;
     }
