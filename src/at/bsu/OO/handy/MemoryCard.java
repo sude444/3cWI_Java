@@ -3,8 +3,8 @@ package at.bsu.OO.handy;
 import java.util.ArrayList;
 
 public class MemoryCard {
-    private int capacity;
-    private ArrayList<Photofile> files;
+    private static int capacity;
+    private static ArrayList<Photofile> files;
 
 
     //Constructor
@@ -14,12 +14,12 @@ public class MemoryCard {
     }
 
 
-    public void saveFile(Photofile file){
+    public static void saveFile(Photofile file){
         files.add(file);
         capacity -= file.getSize();
     }
 
-    public void getAllFiles()
+    public static void getAllFiles()
     {
         for(int i = 0; i < files.size(); i++)
         {
@@ -27,7 +27,7 @@ public class MemoryCard {
         }
     }
 
-    public int getFreeSpace()
+    public static int getFreeSpace()
     {
         return capacity;
     }
