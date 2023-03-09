@@ -13,7 +13,7 @@ public class MemoryCard {
         this.files = new ArrayList<Photofile>();
     }
 
-    
+
     public void saveFile(Photofile file){
         files.add(file);
         capacity -= file.getSize();
