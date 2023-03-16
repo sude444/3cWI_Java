@@ -14,7 +14,6 @@ public class Pics {
     }
 
 
-    
     //Getter and setter
     public String getName() {
         return name;
