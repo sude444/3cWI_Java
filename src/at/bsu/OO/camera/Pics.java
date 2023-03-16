@@ -3,16 +3,15 @@ package at.bsu.OO.camera;
 public class Pics {
     private String name;
     private double date;
-    private int size;
+    public enum SIZE{zweiGB, vierGB, sechsGB}
 
-    
     //Constructor
-    public Pics(String name, double date, int size) {
+
+
+    public Pics(String name, double date) {
         this.name = name;
         this.date = date;
-        this.size = size;
     }
-
 
     //Getter and setter
     public String getName() {
@@ -29,13 +28,5 @@ public class Pics {
 
     public void setDate(double date) {
         this.date = date;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
     }
 }
