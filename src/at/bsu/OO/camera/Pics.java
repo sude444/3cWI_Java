@@ -4,15 +4,17 @@ public class Pics {
     private String name;
     private double date;
     public enum SIZE{zweiGB, vierGB, sechsGB}
+    private SIZE size;
 
     //Constructor
-
-
-    public Pics(String name, double date) {
+    public Pics(String name, double date, SIZE size) {
         this.name = name;
         this.date = date;
+        this.size = size;
     }
 
+
+    
     //Getter and setter
     public String getName() {
         return name;
@@ -28,5 +30,13 @@ public class Pics {
 
     public void setDate(double date) {
         this.date = date;
+    }
+
+    public SIZE getSize() {
+        return size;
+    }
+
+    public void setSize(SIZE size) {
+        this.size = size;
     }
 }
