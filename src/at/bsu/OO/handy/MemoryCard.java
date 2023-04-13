@@ -23,7 +23,7 @@ public class MemoryCard {
     {
         for(int i = 0; i < files.size(); i++)
         {
-            this.files.get(i).getInfo();
+
         }
     }
 
