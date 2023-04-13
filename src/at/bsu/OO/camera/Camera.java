@@ -12,6 +12,8 @@ public class Camera {
         this.pixel = pixel;
     }
 
+
+
     //Getter and Setter
     public String getColor() {
         return color;
