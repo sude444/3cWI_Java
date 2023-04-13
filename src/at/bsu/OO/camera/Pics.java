@@ -46,6 +46,10 @@ public class Pics {
         }
     }
 
+    public void getInfo(){
+        System.out.println("Name: "+ name +", " + "Date: " + date + ", " + "Größe: " + size );
+    }
+
     public void setSize(SIZE size) {
         this.size = size;
     }
