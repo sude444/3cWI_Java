@@ -31,8 +31,19 @@ public class Pics {
         this.date = date;
     }
 
-    public SIZE getSize() {
-        return size;
+    public float getSize() {
+        if(size == SIZE.zweiGB){
+            return 2;
+        }
+        if(size == SIZE.vierGB){
+            return 4;
+        }
+        if(size == SIZE.sechsGB){
+            return 6;
+        }
+        else{
+            return 0;
+        }
     }
 
     public void setSize(SIZE size) {
