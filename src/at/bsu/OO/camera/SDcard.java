@@ -14,12 +14,10 @@ public class SDcard {
         this.files = new ArrayList<Pics>();
     }
 
-
     public void saveFile(Pics file){
         if(capacity < file.getSize()){
             System.out.println("Bild konte nicht gespeichert werden. Speicher ist voll!");
         }
-        file.getSize();
         else{
             this.files.add(file);
             this.capacity -= file.getSize();
