@@ -7,4 +7,6 @@ public class LensManufacturer extends CamManufacturer {
         super(name, country);
     }
 
+
+
 }
