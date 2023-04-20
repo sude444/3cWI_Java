@@ -6,11 +6,27 @@ public class Pics {
     public enum SIZE{zweiGB, vierGB, sechsGB}
     private SIZE size;
 
+
     //Constructor
     public Pics(String name, double date, SIZE size) {
         this.name = name;
         this.date = date;
         this.size = size;
+    }
+
+
+    public void takePic(){
+        Pics picture ;
+        if (size == Pics.SIZE.zweiGB) {
+            //  make picture
+            picture = new Pics("image",03.03, SIZE.zweiGB);
+        }
+        else if (size == SIZE.vierGB){
+            picture = new Pics("image",2.11,SIZE.vierGB);
+        } else  {
+            picture = new Pics("image",04.04,SIZE.sechsGB);
+        }
+        //this.SDcard.saveFile(picture);
     }
 
 
