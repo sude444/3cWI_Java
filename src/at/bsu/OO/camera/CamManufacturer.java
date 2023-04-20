@@ -12,6 +12,10 @@ public class CamManufacturer {
         this.country = country;
     }
 
+    public void getInfo(){
+        System.out.println("Name: "+ name + ", \n" + "Country: " + country);
+    }
+
 
     //Getter and Setter
     public String getName() {
