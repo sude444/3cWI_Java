@@ -26,7 +26,6 @@ public class Pics {
         } else  {
             picture = new Pics("image",04.04,SIZE.sechsGB);
         }
-        //this.SDcard.saveFile(picture);
     }
 
 
