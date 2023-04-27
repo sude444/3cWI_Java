@@ -29,6 +29,20 @@ public class SDcard {
         }
     }
 
+    public void saveImage(Pics file)
+    {
+        if (this.capacity - file.getSize() >= 0)
+        {
+            System.out.println("----------------------\nPicture taken!");
+            this.capacity -= file.getSize();
+            this.files.add(file);
+        }
+        else
+        {
+            System.out.println("----------------------\nNot enough storage space left!");
+        }
+    }
+
 
     //Setter und Getter
 
