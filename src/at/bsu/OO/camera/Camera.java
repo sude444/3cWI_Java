@@ -30,10 +30,9 @@ public class Camera {
         sDcard.getInfo();
     }
 
-    public void takePic()
+    public Pics takePic(String name, double date, Pics.SIZE size)
     {
-        System.out.println("Picture taken");
-
+        return new Pics(name, date, size);
     }
 
     //Getter and Setter
